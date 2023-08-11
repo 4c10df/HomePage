@@ -16,12 +16,19 @@ h2{
     line-height: normal;
     z-index: 2;
 }
+.home{
+    color: black;
+    text-decoration: none;
+    align-content: center; 
+}
+.home:hover {
+    font-weight: 600;
+    font-size: 26px;
+    -moz-border-radius: 7px;
+    text-decoration: none;
+ }
+ 
 /********************* HEADER *******************/
-/**.site-wrapper{
-    margin: auto;
-    padding: 0 0;
-    width: 80%;
-}**/
 /************************ FOR THE 2 NAR BAR IN HEADER *******************************/
 .nav-bar{
     background-color: #FFF;
