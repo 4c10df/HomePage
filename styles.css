@@ -30,54 +30,242 @@ h2{
  
 /********************* HEADER *******************/
 /************************ FOR THE 2 NAR BAR IN HEADER *******************************/
-.nav-bar{
-    background-color: #FFF;
+ 
+.title{  
+    cursor:pointer;  
+}  
+   /*Properties for Nav-bar*/  
+   nav{
     position: fixed;
     z-index: 3;
-    display: flex;
-    width: 100%;
     height: 128px;
-    flex-shrink: 0;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: flex-start;
-}
-.down-icon1{
-    background-color: #FFF;
+    width: 100%;
+    background: #FFFFFF;
     display: flex;
-    height: 144px;
-    flex-shrink: 0;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: stretch;
     justify-content: center;
-    align-items: stretch;
+    flex-direction: row;
+    align-content: stretch;
+    align-items: center;
+    
 }
+/*** line : hover *********/
+a:after{
+    content: "";
+    position: absolute;
+    background-color: #337FED;
+    height: 5px;
+    width: 0;
+    left: 0;
+    bottom: -5;
+    transition: 0.3s;
+}
+a:hover:after{
+    width: 60px;
+    
+}
+a{
+    position: relative;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+.line2:hover:after{
+    width: 70px;
+}
+.line3:hover:after{
+    width: 143px;
+}
+.line4:hover:after{
+    width: 83px;
+}
+/*** line : hover *********/
 
-ul{
+
+
+.mainMenu{
     display: flex;
-    width: 487px;
-    gap: 16px;
+    gap: 49px;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: row;
+    align-content: center;
+    align-items: center;
+    list-style: none;
 }
 
+nav .mainMenu li a{
+    display: block;
+    padding:15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 1.5rem;
+    
+}
+
+nav .mainMenu li a:{
+    background: rgb(255,94,0);
+
+}
+
+nav .openMenu{
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+
+}
+nav .logo {
+    margin: 6px;
+    cursor: pointer;
+}
+@media only screen and (max-width:800px) {
+    nav .mainMenu{
+        height: 70vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #f9f9f9;
+        transition: top 1s ease;
+        display: none;
+        margin: auto;
+    }
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu a :after:hover{
+        background: none;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .icons{
+        display: inline-block;
+        padding: 12px;
+    }
+    
+}
+/****************** HAMBURGER *********************/
+
+/** visibility of menu start here **/
+.menuPopup{
+    display: flex;
+    position: relative;
+    right: -53px;
+    width: 27vh;
+    top: -257px;
+    height: 36vh;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    margin: 0px 0px -294px -17px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 2;
+   
+}
+.open-Ham {
+    visibility: visible;
+    transition: transform 0.4s, top 0.3s;
+    top: 33px;
+}
+
+/** visibility of menu end **/
+
+/** for menu button**/
+
+.openHamburger{
+
+    display: block;
+    position: relative;
+    top: 0;
+    left: 828;
+    cursor: pointer;
+    z-index: 2;
+}
+.ham-burger{
+    visibility: hidden;
+    transition: transform 0.4s, top 0.3s;
+}
+
+/** for menu button2**/
+
+.closeHamburger{
+    position: relative;
+    top: 0px;
+    left: 851px;
+    cursor: pointer;
+    visibility: hidden;
+    z-index: 3;
+}
+.ham-burger1{
+    visibility: visible;
+    transition: transform 0.4s, top 0.3s;
+    
+}
+/****************** HAMBURGER *******/
+
+
+
+.icons-social-23{
+    position: relative;
+    top: -7px;
+    cursor: pointer;
+}
+
+.mainMenu2{
+    height: 70vh;
+    position: relative;
+    top: -109px;
+    /* right: 0; */
+    left: -19px;
+    width: 60vh;
+    z-index: 3;
+    gap: 18px;
+    flex-direction: column;
+    justify-content: center;
+    transition: top 1s ease;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+   
+}
+
+@media only screen and (max-width:800px){
+    .openHamburger{
+        visibility: hidden;
+
+    }
+}
+/****************** HAMBURGER end here *******/
 
 
 .down-icon{
     display: flex;
-    width: 487px;
     align-content: center;
     justify-content: center;
     align-items: center;
-    gap: 38px;
+    gap: 24px;
+    cursor: pointer;
 }
+
 
 /*** NAR BAR END ****/
 
@@ -96,7 +284,7 @@ ul{
 
 .image-background{
     position:absolute;
-    top: 112px;
+    top: 125px;
 }
 
 h1{
@@ -250,15 +438,18 @@ button{
 }
 /*************** end of form and button **************/
 
-h5{
+.all-details{
     color: #636363;
     position: relative;
-    bottom: 699px;
+    bottom: 656px;
     text-align: center;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.all-details:hover:after{
+    width: 193px;
 }
 
 /*************************** END OF HEADER ******************/
@@ -870,7 +1061,6 @@ strong{
 }
 .down-icon22{
     display: flex;
-    width: 487px;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -937,7 +1127,7 @@ strong{
     -moz-border-radius: 0;
     width: 208px;
     height: 73px;
-    color: #000;
+    color: #FFF;
     font-size: 24px;
     font-weight: 700;
     border: solid #337FED 1px;
@@ -956,10 +1146,10 @@ strong{
     border: solid #337FED 1px;
     background: #FFF;
     background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
-    background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
-    background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -moz-linear-gradient(top, #1E62D0, #FFF);
+    background-image: -ms-linear-gradient(top, #FFF, #3D94F6);
     background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
-    background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+    background-image: -webkit-gradient(to bottom, #1E62D0, #FFF);
     -moz-border-radius: 7px;
     border-radius: 7px;
     text-decoration: none;
@@ -1022,7 +1212,7 @@ label{
     -moz-border-radius: 0;
     margin: -66px 0 0 470px;
     width: 222px;
-    height: 64px;
+    height: 67px;
     color: #FFFFFF;
     font-size: 24px;
     font-weight: 400;
@@ -1066,14 +1256,17 @@ label{
     left: 131px;
 }
 
-.navigation-text{
-    color: #000;
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
+
+.navigation-text1:hover:after{
+    width: 143px;
 }
+.navigation-text2:hover:after{
+    width: 70px;
+}
+.navigation-text3:hover:after{
+    width: 80px;
+}
+
 .bottom-txt{
     color: #000;
     text-align: center;
@@ -1084,3 +1277,5 @@ label{
     position: relative;
     top: 19px;
 }
+
+/******** screen sizes ***********/
