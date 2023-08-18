@@ -1279,3 +1279,164 @@ label{
 }
 
 /******** screen sizes ***********/
+@media only screen and (max-width:400px){
+    body{
+        width: -10%;
+    }
+    .first-container{
+        width: 930px;
+    }
+    h1{
+        font-size: 66px;
+        width: 605px;
+        margin: 251px 0 0 0;
+    }
+    .image-background{
+        width: 930px;
+        height: 700px;
+    }
+    .image-background2{  
+       width: 877px;
+    }
+    .move-image{
+        position: relative;
+        bottom: -53px;
+    }
+
+    .image1{
+        width: 300px;
+    }
+    .image2{
+        width: 300px;
+    }
+    .image3{
+        width: 300px;
+    }
+    .image4{
+        width: 300px;
+    }
+    .image5{
+        width: 300px;
+    }
+    .down-icon{
+        width: 615px;
+    }
+
+    .our-mission{
+        display: flex;
+        
+    }
+    .square1{
+        width: 430px;
+    }
+    .square2{
+        width: 430px;
+    }
+    .square3{
+        width: 430px;
+    }
+    .square4{
+        width: 430px;
+    }
+    .square5{
+        width: 430px;
+    }
+    .square6{
+        width: 430px;
+    }
+    .square7{
+        width: 430px;
+    }
+
+
+    .image6{
+        width: 430px;
+    }
+    .image7{
+        width: 430px;
+    }
+    .second-contanier-txt{
+        position: relative;
+        right: -234px;
+    }
+
+    input{
+        width: 512px;
+    }
+    button{
+        width:280px ;
+        margin: -65px 0 0 503px;
+    }
+
+    /************* second container ***********/
+
+    .image8{
+        width: 430px;
+    }
+    .image9{
+        width: 430px;
+    }
+    .image10{
+        width: 430px;
+    }
+    .image11{
+        width: 430px;
+    }
+    .image12{
+        width: 430px;
+    }
+
+
+    .Finchglow{
+        width: 364px;
+    }
+    .Travelden{
+        width: 364px;
+    }
+    .FCM{
+        width: 364px;
+    }
+    .lagos{
+        width: 364px;
+    }
+    .finchgllow{
+        width: 364px;
+    }
+    
+    .btn{
+        margin: 0px 0 0 -155px;
+    }
+    .btc{
+        margin: 0px 0 0 -155px;
+    }
+    .mdn{
+        margin: -61px 0 0 -155px;
+    }
+    .cdn{
+        margin: -32px 0 0 -155px;
+    }
+    .icm{
+        margin: -79px 0 0 -155px;
+    }
+
+    .social{
+        right: 76px;
+    }
+    .social1{
+        right: 76px;
+    }
+    .social2{
+        right: 76px;
+    }
+    .social3{
+        right: 76px;
+    }
+    .social4{
+        right: 76px;
+    }
+
+    h6{
+        position: relative;
+        left: 224px;
+    }
+}
