@@ -1,6 +1,5 @@
 body{
     width: 100%;
-    height: 1024px;
     margin: auto;
     color: #000;
     font-family: 'Fraunces', serif;
@@ -10,7 +9,7 @@ body{
 h2{
     color: #08A0D8;
     text-align: center;
-    font-size: 118px;
+    font-size: 70px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
@@ -128,12 +127,16 @@ nav .logo {
     cursor: pointer;
 }
 @media only screen and (max-width:800px) {
+    nav{
+        gap: 303px;
+    }
     nav .mainMenu{
         height: 70vh;
         position: fixed;
         top: 0;
         right: 0;
         left: 0;
+        gap: 23px;
         z-index: 10;
         flex-direction: column;
         justify-content: center;
@@ -161,7 +164,9 @@ nav .logo {
         display: inline-block;
         padding: 12px;
     }
-    
+    .icons-social{
+        visibility: hidden;
+    }
 }
 /****************** HAMBURGER *********************/
 
@@ -248,12 +253,7 @@ nav .logo {
    
 }
 
-@media only screen and (max-width:800px){
-    .openHamburger{
-        visibility: hidden;
 
-    }
-}
 /****************** HAMBURGER end here *******/
 
 
@@ -264,15 +264,21 @@ nav .logo {
     align-items: center;
     gap: 24px;
     cursor: pointer;
+    height: 69px;
 }
 
 
 /*** NAR BAR END ****/
 
+.site-wrapper-1{
+    display: flex;
+    flex-direction: column;
+}
+
 .first-container{
     display: flex;
     background-color: #05284C;
-    height: 829px;
+    height: 658px;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: space-around;
@@ -284,31 +290,33 @@ nav .logo {
 
 .image-background{
     position:absolute;
+    height: 535px;
+    width: 100%;
     top: 125px;
 }
 
 h1{
     color: #FFF;
     text-align: center;
-    font-size: 117px;
+    font-size:  54px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-    width: 974px;
-    margin: 155px 0 0 0;
+    width: 602px;
+    margin: 172px 0 0 0;
 }
+
 /*********** img ***********/
 .move-image{
     display: flex;
     position: relative;
-    bottom: 46px;
+    bottom: 6px;
     align-items: flex-end;
     width: 80%;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: stretch;
     justify-content: center;
-
 }
 
 
@@ -316,11 +324,15 @@ h1{
     position: relative;
     top: 0px;
     left: 312px;
+    height: auto;
+    width: 300px;
 }
 .image3{
     position: relative;
     top: 0px;
     left: 159px;
+    height: auto;
+    width: 300px;
 }
 
 .image1{
@@ -328,6 +340,8 @@ h1{
     top:0px;
     right: 2px;
     z-index: 2;
+    height: auto;
+    width: 300px;
     
 }
 .image2{
@@ -335,16 +349,20 @@ h1{
     top: 0px;
     right: 179px;
     z-index: 1;
+    height: auto;
+    width: 300px;
 }
 .image5{
     position: relative;
     top:  0px;
     right: 362px;
+    height: auto;
+    width: 300px;
 }
 /****** 2nd-contanier**********/
 .second-container{
     background-color: #FFF;
-    height: 520px;
+    height: 463px;
     display: flex;
     flex-shrink: 0;
     flex-direction: column;
@@ -364,21 +382,23 @@ h1{
 
 .image-background2{
     position: relative;
-    bottom: 460px;
+    bottom: 295px;
+    width: 100%;
+    height: 463px;
 }
 
 .second-contanier-txt> h2{
     position: relative;
-    bottom: 56px;
+    bottom: 4px;
 }
 
 .Get-premium{
     color: #000;
     position: relative;
-    bottom: 204px;
+    bottom: 100px;
     text-align: center;
     font-family: Red Hat Display;
-    font-size: 32px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -387,18 +407,39 @@ h1{
 /****** form and button ****/
 .form-example{
     position: relative;
-    bottom: 681px;
+    bottom: 548px;
 }
 
 .form-example1{
     display: flex;
 }
 input{
-    width: 632px;
-    height: 66px;
+    width: 478px;
+    height: 62px;
     flex-shrink: 0; 
     border-color: ;
 }
+#email-error{
+    color: red;
+    font-weight: 400;
+}
+.error{
+    position: absolute;
+    top: 54%;
+    left: 316px;
+    font-size: 17px;
+    color: red;
+    font-weight: 400;
+}
+.error1{
+    position: absolute;
+    top: 36%;
+    left: 331px;
+    font-size: 15px;
+    color: red;
+    font-weight: 400;
+}
+
 
 button{
     background: #3D94F6;
@@ -409,9 +450,9 @@ button{
     background-image: -webkit-gradient(to bottom, #3D94F6, #1E62D0);
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
-    margin: -66px 0 0 631px;
+    margin: -62px 0 0 477px;
     width: 273px;
-    height: 66px;
+    height: 62px;
     color: #FFFFFF;
     font-size: 24px;
     font-weight: 400;
@@ -441,7 +482,7 @@ button{
 .all-details{
     color: #636363;
     position: relative;
-    bottom: 656px;
+    bottom: 525px;
     text-align: center;
     font-size: 32px;
     font-style: normal;
@@ -449,7 +490,12 @@ button{
     line-height: normal;
 }
 .all-details:hover:after{
-    width: 193px;
+    width: 205px;
+}
+
+.icons111{
+    width: 200px;
+    height: auto;
 }
 
 /*************************** END OF HEADER ******************/
@@ -504,6 +550,10 @@ p{
     font-weight: 400;
     line-height: normal;
 }
+.image{
+    width: 50%;
+    height: 540px;
+}
 
 .our-mission{
     display: flex;
@@ -539,6 +589,11 @@ p{
 }
 
 /**container 2**/
+
+.image300{
+    height:540px;
+    width: 50%;
+}
 
 h6{
     color: #000;
@@ -873,7 +928,7 @@ h6{
     justify-content: center;
     align-content: center;
     align-items: center;
-    height: 1860px;
+    height: 1543px;
 }
 
 .imgs{
@@ -1069,24 +1124,23 @@ strong{
 /***** THIRD CONTENT *******/
 
 .third-content{
-    display: flex;
     background-color: #05284C;
-    height: 719px;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: space-around;
-    justify-content: flex-start;
-    align-items: center;
+    height:  501px;
+    width: 100%;
+    
 }
 .img-background{
     position: relative;
     bottom: 336px;
+    height:501px;
+    width: 100%;
 }
 
 .move-img{
     display: flex;
     position: relative;
-    bottom: 766px;
+    bottom: 833px;
+    left: 156px;
     align-items: flex-end;
     width: 80%;
     flex-direction: row;
@@ -1095,11 +1149,20 @@ strong{
     justify-content: center;
 }
 .img-wing{
+    height: 501px;
     position: relative;
-    bottom: 287px;
-    left: 239px;
+    bottom: 4px;
+    left: 263px;
 }
 /*********backgroud button************/
+.cap-txt{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: flex-end;
+}
+
 .Join{
     display: flex;
     flex-direction: column;
@@ -1107,10 +1170,11 @@ strong{
     align-content: flex-start;
     align-items: baseline;
     position: relative;
-    right: 210px;
-    top: 140px;
-
+    right: -269px;
+    top: -2px;
+    width: 50%;
 }
+
 .Join-our{
     color: #FFF;
     font-size: 40px;
@@ -1142,6 +1206,7 @@ strong{
     justify-content: center;
  }
  
+ 
  .apply-here:hover {
     border: solid #337FED 1px;
     background: #FFF;
@@ -1158,8 +1223,8 @@ strong{
 /*********************************** FOURTH CONTENT ******************************/
 
 .fouth-content{
-    background-color: #FFF;
-    height: 300px;
+    background-color: #DCDCDC;
+    height: 336px;
     display: flex;
     flex-shrink: 0;
     flex-direction: column;
@@ -1279,164 +1344,2029 @@ label{
 }
 
 /******** screen sizes ***********/
-@media only screen and (max-width:400px){
+@media only screen and (max-width:700px) {
+  
+
+    nav{
+        gap: 303px;
+    }
+    nav .mainMenu{
+        height: 70vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        gap: 40px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #f9f9f9;
+        transition: top 1s ease;
+        display: none;
+        margin: auto;
+    }
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu a :after:hover{
+        background: none;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .icons{
+        display: inline-block;
+        padding: 12px;
+    }
+    .icons-social{
+        visibility: hidden;
+    }
+}
+@media only screen and (max-width:800px){
     body{
-        width: -10%;
+        width: 372px;
+      
     }
-    .first-container{
-        width: 930px;
-    }
-    h1{
-        font-size: 66px;
-        width: 605px;
-        margin: 251px 0 0 0;
-    }
-    .image-background{
-        width: 930px;
-        height: 700px;
-    }
-    .image-background2{  
-       width: 877px;
-    }
-    .move-image{
-        position: relative;
-        bottom: -53px;
-    }
-
-    .image1{
-        width: 300px;
-    }
-    .image2{
-        width: 300px;
-    }
-    .image3{
-        width: 300px;
-    }
-    .image4{
-        width: 300px;
-    }
-    .image5{
-        width: 300px;
-    }
-    .down-icon{
-        width: 615px;
-    }
-
-    .our-mission{
-        display: flex;
-        
-    }
-    .square1{
-        width: 430px;
-    }
-    .square2{
-        width: 430px;
-    }
-    .square3{
-        width: 430px;
-    }
-    .square4{
-        width: 430px;
-    }
-    .square5{
-        width: 430px;
-    }
-    .square6{
-        width: 430px;
-    }
-    .square7{
-        width: 430px;
-    }
-
-
-    .image6{
-        width: 430px;
-    }
-    .image7{
-        width: 430px;
-    }
-    .second-contanier-txt{
-        position: relative;
-        right: -234px;
-    }
-
-    input{
-        width: 512px;
-    }
-    button{
-        width:280px ;
-        margin: -65px 0 0 503px;
-    }
-
-    /************* second container ***********/
-
-    .image8{
-        width: 430px;
-    }
-    .image9{
-        width: 430px;
-    }
-    .image10{
-        width: 430px;
-    }
-    .image11{
-        width: 430px;
-    }
-    .image12{
-        width: 430px;
-    }
-
-
-    .Finchglow{
-        width: 364px;
-    }
-    .Travelden{
-        width: 364px;
-    }
-    .FCM{
-        width: 364px;
-    }
-    .lagos{
-        width: 364px;
-    }
-    .finchgllow{
-        width: 364px;
+   
+    .site-wrapper-1{
+        align-items: center;
     }
     
-    .btn{
-        margin: 0px 0 0 -155px;
-    }
-    .btc{
-        margin: 0px 0 0 -155px;
-    }
-    .mdn{
-        margin: -61px 0 0 -155px;
-    }
-    .cdn{
-        margin: -32px 0 0 -155px;
-    }
-    .icm{
-        margin: -79px 0 0 -155px;
-    }
+    .first-container{
+        height: 543px;
+        width: 783px;
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        align-items: center;
 
-    .social{
-        right: 76px;
     }
-    .social1{
-        right: 76px;
+    
+    
+    
+    .image-background{
+        height: 421px;
+        width: 100%;
+        top: 125px;
     }
-    .social2{
-        right: 76px;
+    
+    h1{
+       
+        font-size: 43px;
+        width:491px;
+        margin: 172px 0 0 0;
     }
-    .social3{
-        right: 76px;
-    }
-    .social4{
-        right: 76px;
-    }
-
-    h6{
+    
+    /*********** img ***********/
+    .move-image{
+        display: flex;
         position: relative;
-        left: 224px;
+        bottom: 0px;
+        margin: 0;
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        /* right: -163px; */
     }
+    
+    
+    
+    .image4{
+        left: 195px;
+        height: auto;
+        width: 220px;
+    }
+    .image3{
+        left: 101px;
+        height: auto;
+        width: 220px;
+    }
+    
+    .image1{
+        right: 2px;
+        height: auto;
+        width: 220px;
+        
+    }
+    .image2{
+        right: 95px;
+        height: auto;
+        width: 220px;
+    }
+    .image5{
+        right: 225px;
+        height: auto;
+        width: 220px;
+    }
+    
+    /****** 2nd-contanier**********/
+    .second-container{
+        background-color: #FFF;
+        height: 332px;
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+    .second-contanier-txt {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .image-background2{
+        position: relative;
+        bottom: 269px;
+        width: 782px;
+        height: 332px;
+    }
+    
+    .second-contanier-txt> h2{
+        bottom: 2px;
+        font-size: 64px;
+    }
+    
+    .Get-premium{
+        bottom: 94px;
+        font-size: 23px;
+        font-style: normal;
+        width: 589px;
+    }
+    /****** form and button ****/
+    .form-example{
+        position: relative;
+        bottom: 426px;
+    }
+    
+    .form-example1{
+        display: flex;
+    }
+    input{
+        width: 315px;
+        height: 46px;
+        flex-shrink: 0; 
+      
+    }
+   
+    .error{
+        position: absolute;
+        top: 53%;
+        left: 126px;
+        font-size: 12px;
+    }   
+    .error1{
+        top: 34%;
+        left: 188px;
+        font-size: 13px;
+    }
+    
+    
+    button{
+        margin: -46px 0 0 314px;
+        width: 181px;
+        height: 46px;
+        font-size: 24px;
+        
+     }
+     
+   
+    /*************** end of form and button **************/
+    
+    .all-details{
+        bottom: 432px;
+        font-size: 27px;
+    }  
+    .all-details:hover:after{
+        width: 193px;
+    }
+    .icons111{
+        width: 120px;
+    }
+    /*************************** END OF HEADER ******************/
+    
+    
+.container2{
+    height: 6070px;
+
+}
+h4{
+    color: #08A0D8;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+p{
+    color: #000;
+    text-align: center;
+    font-family: Red Hat Display;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 489px;
+    position: relative;
+    bottom: 62px;
+}
+.text1{
+    width: 389px;
+    bottom: 65px;
+    font-size: 29px;
+}
+.text2{
+    width: 338px;
+    bottom: 65px;
+    font-size: 29px;
+}
+.image{
+    width: 782px;
+    height: auto;
+}
+
+.our-mission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.square1{
+    Height:auto;
+    width: 782px;
+}
+.our-vision{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.square2{
+    Height:auto;
+    width: 782px;
+}
+
+/**container 2**/
+
+.image300{
+    height:auto;
+    width: 782px;
+}
+
+h6{
+    color: #000;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 26px;
+}
+/************   1 pic, button and text (Finchglow)  **********/
+.square3{
+    width: 782px;
+    height: 540px;
+    
+
+
+}
+.Finchglow{
+    font-size: 18px;
+    width: 615px;
+}
+.btn{
+    width:208px;
+    height: 38px;
+    margin: 18px 0 0 -407px;
+    font-size: 24px;
+    bottom: 54px;
+ }
+ 
+ .social{
+    bottom: 11px;
+    right: 204px;
+    gap: 31px;
+ }
+ /************   2 pic, button and text (Travelden)  **********/
+.square4{
+    width: 782px;
+    height: 540px;
+}
+.Travelden{
+    font-size: 19px;
+    width: 615px;
+}
+.btc{
+    width:208px;
+    height: 38px;
+    margin: 22px 0 0 -409px;
+    font-size: 24px;
+    bottom: 64px;
+ }
+    
+ .social1{
+    display: flex;
+    position: relative;
+    bottom: 30px;
+    right: 204px;
+    gap: 31px;
+ }
+/************   3 pic, button and text (FCM)  **********/
+.square5{
+    width: 782px;
+    height: 540px;
+
+}
+.FCM{
+    font-size: 18px;
+    width: 615px;
+}
+.mdn{
+    width:208px;
+    height: 38px;
+    margin: -42px 0 0 -407px;
+    font-size: 24px;
+    bottom: 6px;
+ }
+ 
+.social2{
+    top: 20px;
+    right: 203px;
+    gap: 31px;
+ }
+/************   4 pic, button and text  (lagos) **********/
+.square6{
+    width: 782px;
+    height: 540px;
+}
+.lagos{
+    font-size: 18px;
+    width: 615px;
+}
+.cdn{
+    width:208px;
+    height: 38px;
+    margin: -16px 0 0 -406px;
+    font-size: 24px;
+    bottom: 38px;
+ }
+ 
+ .social3{
+    bottom: 13px;
+    right: 203px;
+    gap: 31px;
+ }
+/************   5 pic, button and text (finchgllow)  **********/
+
+.square7{
+    width: 782px;
+    height: 540px;
+}
+.finchgllow{
+    font-size: 18px;
+    width: 615px;
+}
+.icm{
+    width:208px;
+    height: 38px;
+    margin: -74px 0 0 -401px;
+    font-size: 24px;
+    top: 18px;
+ }
+ 
+ .social4{
+    top: 43px;
+    right: 199px;
+    gap: 31px;
+ }
+/************   !!!end!!!  **********/
+
+.mission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/****************** footer *****************/
+
+
+.first-content{
+    height: 898px;
+    
+}
+
+.imgs{
+    
+    gap: 5px;
+    width: 20%;
+}
+.cirle{
+    height: 100px;
+    width: 100px;
+}
+.cirle-container1{
+    gap: 10%;
+    height: auto;
+}
+.cirle-container2{ 
+    gap: 110px;
+    width: 100%;
+}
+.cirle-container3{
+    gap: 19%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}    
+.picture{
+    
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+}
+.subtext{
+    width: 147px;
+    font-size: 12px;
+}
+.subtext1{
+    width: 238px;
+    font-size: 12px;
+    text-align: center;
+}
+.subtext3{
+    width: 146px;
+    font-size: 15px;
+}
+.subtext4{
+    width: 146px;
+    font-size: 15px;
+}
+.subtext5{
+    width: 146px;
+    font-size: 15px;
+}
+
+
+.txts-ourTeam{
+    font-size: 22px;
+    width: 545px;
+    
+
+}
+
+/**********  ***************/
+
+
+
+
+.Second-content{
+    background-color: #08A0D8;
+    width: 791px;
+    position: relative;
+    left: -214px;
+ }
+
+
+.ellipse-1{
+align-items: center;
+display: flex;
+flex-direction: column;
+gap: 5px;
+width: 20%;
+}
+.cirle-11{
+    background: #FFF;
+    border-radius: 429px;
+    width: 135px;
+    height: 135px;
+    flex-shrink: 0;
+}
+.cirle-container4{
+    display: flex;
+    gap: 19%;
+    flex-direction: row;
+    margin: 1% 0% 5% 0%;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+justify-content: center;
+}
+.text-test{
+    font-size: 87px;
+}
+strong{
+    font-size: 15px;
+}
+.subtext8{
+    width: 200px;
+    font-size: 15px;
+}
+   
+.title-name{
+font-size:21px
+}
+.down-icon22{
+display: flex;
+align-content: center;
+justify-content: center;
+align-items: center;
+gap: 55px;
+}
+.icons1{
+    width: 130px;
+    height: auto;
+}
+/***** THIRD CONTENT *******/
+
+.third-content{
+    position: relative;
+    right: 214px;
+    width: 791px;
+    height:318px;
+
+}
+
+
+.move-img{
+bottom: 593px;
+width: 80%;
+left: -16px;
+}
+
+/*********backgroud button************/
+
+.Join{
+right: 17px;
+top: -60px;
+width: 57%;
+
+}
+.Join-our{
+font-size: 20px;
+width: 366px;
+margin: 176px 0 0 46px;
+
+}
+.apply-here{
+width: 178px;
+height: 44px;
+font-size: 18px;
+top: 27px;
+}
+
+
+/*********************************** Footer ******************************/
+
+.fouth-content{
+    position: relative;
+    right: 214px;
+    width: 791px;
+    height: 300px;
+
+}
+
+
+/****** form and button ****/
+.form-example333{
+position: relative;
+top: -20px;
+left: -82px;
+}
+
+.form-example122{
+
+}
+.mail-box{
+width: 239px;
+height: 34px;
+}
+
+label{
+font-size: 17px;
+position: relative;
+bottom: 10px;
+}
+.btn-down-button{
+
+margin: -34px 0 0px 238px;
+width: 144px;
+height: 34px;
+font-size: 17px;
+
+}
+
+/*************** end of form and button **************/
+
+
+/******** navigation button ***********/
+.subtxt-1{
+gap: 27px;
+position: relative;
+top: -24px;
+left: -9px;
+}
+
+.navigation-text1{
+font-size: 17px;
+}
+.navigation-text2{
+font-size: 17px;
+}
+.navigation-text3{
+font-size: 17px;
+}
+.navigation-text1:hover:after{
+width: 118px;
+}
+.navigation-text2:hover:after{
+width: 60px;
+}
+.navigation-text3:hover:after{
+width: 70px;
+}
+
+.bottom-txt{
+font-size: 14px;
+top: -71px;
+left: -82px;
+}
+
+.img-wing{
+width: 380px;
+height: auto;
+position: relative;
+bottom: 3px;
+left: 183px;
+}
+.img-background{
+width: 100%;
+height: 321px;
+position: relative;
+bottom: 276px;
+}
+
+
+
+
+}
+
+@media only screen and (max-width:700px){
+    body{
+        width: 372px;
+      
+    }
+   
+    .site-wrapper-1{
+        align-items: center;
+    }
+    
+    .first-container{
+        height: 543px;
+        width: 683px;
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        align-items: center;
+
+    }
+    
+    
+    
+    .image-background{
+        height: 421px;
+        width: 100%;
+        top: 125px;
+    }
+    
+    h1{
+       
+        font-size: 43px;
+        width:491px;
+        margin: 172px 0 0 0;
+    }
+    
+    /*********** img ***********/
+    .move-image{
+        display: flex;
+        position: relative;
+        bottom: 0px;
+        margin: 0;
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        /* right: -163px; */
+    }
+    
+    
+    
+    .image4{
+        left: 195px;
+        height: auto;
+        width: 220px;
+    }
+    .image3{
+        left: 101px;
+        height: auto;
+        width: 220px;
+    }
+    
+    .image1{
+        right: 2px;
+        height: auto;
+        width: 220px;
+        
+    }
+    .image2{
+        right: 95px;
+        height: auto;
+        width: 220px;
+    }
+    .image5{
+        right: 225px;
+        height: auto;
+        width: 220px;
+    }
+    
+    /****** 2nd-contanier**********/
+    .second-container{
+        background-color: #FFF;
+        height: 332px;
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+    .second-contanier-txt {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .image-background2{
+        position: relative;
+        bottom: 269px;
+        width: 683px;
+        height: 332px;
+    }
+    
+    .second-contanier-txt> h2{
+        bottom: 2px;
+        font-size: 64px;
+    }
+    
+    .Get-premium{
+        bottom: 94px;
+        font-size: 23px;
+        font-style: normal;
+        width: 589px;
+    }
+    /****** form and button ****/
+    .form-example{
+        position: relative;
+        bottom: 426px;
+    }
+    
+    .form-example1{
+        display: flex;
+    }
+    input{
+        width: 315px;
+        height: 46px;
+        flex-shrink: 0; 
+      
+    }
+   
+    .error{
+        position: absolute;
+        top: 53%;
+        left: 126px;
+        font-size: 12px;
+    }   
+    .error1{
+        top: 34%;
+        left: 188px;
+        font-size: 13px;
+    }
+    
+    
+    button{
+        margin: -46px 0 0 314px;
+        width: 181px;
+        height: 46px;
+        font-size: 24px;
+        
+     }
+     
+   
+    /*************** end of form and button **************/
+    
+    .all-details{
+        bottom: 432px;
+        font-size: 27px;
+    }  
+    .all-details:hover:after{
+        width: 193px;
+    }
+    .icons111{
+        width: 109px;
+    }
+    /*************************** END OF HEADER ******************/
+    
+    
+.container2{
+    height: 5559px;
+
+}
+h4{
+    color: #08A0D8;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+p{
+    color: #000;
+    text-align: center;
+    font-family: Red Hat Display;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 489px;
+    position: relative;
+    bottom: 62px;
+}
+.text1{
+    width: 389px;
+    bottom: 65px;
+    font-size: 29px;
+}
+.text2{
+    width: 338px;
+    bottom: 65px;
+    font-size: 29px;
+}
+.image{
+    width: 683px;
+    height: auto;
+}
+
+.our-mission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.square1{
+    Height:auto;
+    width: 683px;
+}
+.our-vision{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.square2{
+    Height:auto;
+    width: 683px;
+}
+
+/**container 2**/
+
+.image300{
+    height:auto;
+    width: 683px;
+}
+
+h6{
+    color: #000;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 26px;
+}
+/************   1 pic, button and text (Finchglow)  **********/
+.square3{
+    width: 683px;
+    height: 540px;
+    
+
+
+}
+.Finchglow{
+    font-size: 18px;
+    width: 615px;
+}
+.btn{
+    width:208px;
+    height: 38px;
+    margin: 18px 0 0 -407px;
+    font-size: 24px;
+    bottom: 54px;
+ }
+ 
+ .social{
+    bottom: 11px;
+    right: 204px;
+    gap: 31px;
+ }
+ /************   2 pic, button and text (Travelden)  **********/
+.square4{
+    width: 683px;
+    height: 540px;
+}
+.Travelden{
+    font-size: 19px;
+    width: 615px;
+}
+.btc{
+    width:208px;
+    height: 38px;
+    margin: 22px 0 0 -409px;
+    font-size: 24px;
+    bottom: 64px;
+ }
+    
+ .social1{
+    display: flex;
+    position: relative;
+    bottom: 30px;
+    right: 204px;
+    gap: 31px;
+ }
+/************   3 pic, button and text (FCM)  **********/
+.square5{
+    width: 683px;
+    height: 540px;
+
+}
+.FCM{
+    font-size: 18px;
+    width: 615px;
+}
+.mdn{
+    width:208px;
+    height: 38px;
+    margin: -42px 0 0 -407px;
+    font-size: 24px;
+    bottom: 6px;
+ }
+ 
+.social2{
+    top: 20px;
+    right: 203px;
+    gap: 31px;
+ }
+/************   4 pic, button and text  (lagos) **********/
+.square6{
+    width: 683px;
+    height: 540px;
+}
+.lagos{
+    font-size: 18px;
+    width: 615px;
+}
+.cdn{
+    width:208px;
+    height: 38px;
+    margin: -16px 0 0 -406px;
+    font-size: 24px;
+    bottom: 38px;
+ }
+ 
+ .social3{
+    bottom: 13px;
+    right: 203px;
+    gap: 31px;
+ }
+/************   5 pic, button and text (finchgllow)  **********/
+
+.square7{
+    width: 683px;
+    height: 540px;
+}
+.finchgllow{
+    font-size: 18px;
+    width: 615px;
+}
+.icm{
+    width:208px;
+    height: 38px;
+    margin: -74px 0 0 -401px;
+    font-size: 24px;
+    top: 18px;
+ }
+ 
+ .social4{
+    top: 43px;
+    right: 199px;
+    gap: 31px;
+ }
+/************   !!!end!!!  **********/
+
+.mission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/****************** footer *****************/
+
+
+.first-content{
+    height: 898px;
+    
+}
+
+.imgs{
+    
+    gap: 5px;
+    width: 20%;
+}
+.cirle{
+    height: 100px;
+    width: 100px;
+}
+.cirle-container1{
+    gap: 10%;
+    height: auto;
+}
+.cirle-container2{ 
+    gap: 110px;
+    width: 100%;
+}
+.cirle-container3{
+    gap: 19%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}    
+.picture{
+    
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+}
+.subtext{
+    width: 147px;
+    font-size: 12px;
+}
+.subtext1{
+    width: 238px;
+    font-size: 12px;
+    text-align: center;
+}
+.subtext3{
+    width: 146px;
+    font-size: 15px;
+}
+.subtext4{
+    width: 146px;
+    font-size: 15px;
+}
+.subtext5{
+    width: 146px;
+    font-size: 15px;
+}
+
+
+.txts-ourTeam{
+    font-size: 22px;
+    width: 545px;
+    
+
+}
+
+/**********  ***************/
+
+
+
+
+.Second-content{
+    background-color: #08A0D8;
+    width: 683px;
+    position: relative;
+    left: -156px;
+ }
+
+
+.ellipse-1{
+align-items: center;
+display: flex;
+flex-direction: column;
+gap: 5px;
+width: 20%;
+}
+.cirle-11{
+    background: #FFF;
+    border-radius: 429px;
+    width: 135px;
+    height: 135px;
+    flex-shrink: 0;
+}
+.cirle-container4{
+    display: flex;
+    gap: 19%;
+    flex-direction: row;
+    margin: 1% 0% 5% 0%;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+justify-content: center;
+}
+.text-test{
+    font-size: 87px;
+}
+strong{
+    font-size: 15px;
+}
+.subtext8{
+    width: 200px;
+    font-size: 15px;
+}
+   
+.title-name{
+font-size:21px
+}
+.down-icon22{
+display: flex;
+align-content: center;
+justify-content: center;
+align-items: center;
+gap: 55px;
+}
+.icons1{
+    width: 119px;
+    height: auto;
+}
+/***** THIRD CONTENT *******/
+
+.third-content{
+    position: relative;
+    right: 156px;
+    width: 683px;
+    height: 318px;
+
+}
+
+
+.move-img{
+bottom: 593px;
+width: 80%;
+left: -16px;
+}
+
+/*********backgroud button************/
+
+.Join{
+right: 17px;
+top: -60px;
+width: 57%;
+
+}
+.Join-our{
+font-size: 20px;
+width: 366px;
+margin: 176px 0 0 46px;
+
+}
+.apply-here{
+width: 178px;
+height: 44px;
+font-size: 18px;
+top: 27px;
+}
+
+
+/*********************************** Footer ******************************/
+
+.fouth-content{
+    position: relative;
+    right: 156px;
+    width: 683px;
+    height: 300px;
+}
+
+
+
+
+/****** form and button ****/
+.form-example333{
+position: relative;
+top: -20px;
+left: -82px;
+}
+.fouth-content-txt {
+    position: relative;
+    left: 26px;
+}
+
+.form-example122{
+
+}
+.mail-box{
+width: 239px;
+height: 34px;
+}
+
+label{
+font-size: 17px;
+position: relative;
+bottom: 10px;
+}
+.btn-down-button{
+
+margin: -34px 0 0px 238px;
+width: 144px;
+height: 34px;
+font-size: 17px;
+
+}
+
+/*************** end of form and button **************/
+
+
+/******** navigation button ***********/
+.subtxt-1{
+gap: 27px;
+position: relative;
+top: -24px;
+left: -9px;
+}
+
+.navigation-text1{
+font-size: 17px;
+}
+.navigation-text2{
+font-size: 17px;
+}
+.navigation-text3{
+font-size: 17px;
+}
+.navigation-text1:hover:after{
+width: 118px;
+}
+.navigation-text2:hover:after{
+width: 60px;
+}
+.navigation-text3:hover:after{
+width: 70px;
+}
+
+.bottom-txt{
+font-size: 14px;
+top: -71px;
+left: -82px;
+}
+
+.img-wing{
+width: 380px;
+height: auto;
+position: relative;
+bottom: 3px;
+left: 183px;
+}
+.img-background{
+width: 100%;
+height: 321px;
+position: relative;
+bottom: 276px;
+}
+
+
+
+
+}
+
+@media only screen and (max-width:400px){
+    
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 256px;
+        right: 290px;
+    }
+    nav .mainMenu {
+        height: 44vh;
+        position: fixed;
+        top: 0;
+        right: -105px;
+        left: -144px;
+        gap: 22px;
+    }
+    
+
+    nav{
+        gap: 100px;
+        width: 400px;
+    }
+    nav .logo {
+        margin: 6px;
+        cursor: pointer;
+        width: 190px;
+        
+    }
+   
+    .site-wrapper-1{
+        align-items: center;
+    }
+    
+    .first-container{
+        height: 382px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        align-items: center;
+
+    }
+    
+    
+    
+    .image-background{
+        height: 258px;
+        width: 100%;
+        top: 125px;
+    }
+    
+    h1{
+        font-size: 22px;
+        width: 189px;
+        
+    }
+    
+    /*********** img ***********/
+    .move-image{
+        display: flex;
+        position: relative;
+        bottom: 0px;
+        margin: 0;
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        /* right: -163px; */
+    }
+    
+    
+    
+    .image4{
+        left: 114px;
+        height: auto;
+        width: 130px;
+    }
+    .image3{
+        left: 58px;
+        height: auto;
+        width:130px;
+    }
+    
+    .image1{
+        right: 2px;
+        height: auto;
+        width: 130px;
+        
+    }
+    .image2{
+        right: 62px;
+        height: auto;
+        width: 130px;
+    }
+    .image5{
+        right: 127px;
+        height: auto;
+        width: 130px;
+    }
+    
+    /****** 2nd-contanier**********/
+    .second-container{
+        background-color: #FFF;
+        height: 250px;
+        width: 400px;
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+    .second-contanier-txt {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .image-background2{
+        position: relative;
+        bottom: 182px;
+        width: 400px;
+        height: 257px;
+    }
+    
+    .second-contanier-txt> h2{
+        bottom: 2px;
+        font-size: 46px;
+    }
+    
+    .Get-premium{
+        bottom: 62px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        width: 377px;
+
+    }
+    /****** form and button ****/
+    .form-example{
+        position: relative;
+        bottom: 317px;
+    }
+    
+    .form-example1{
+        display: flex;
+    }
+    input{
+        width: 199px;
+        height: 46px;
+        flex-shrink: 0; 
+      
+    }
+   
+    .error{
+        position: absolute;
+        top: 53%;
+        left: 126px;
+        font-size: 12px;
+    }   
+    .error1{
+        top: 34%;
+        left: 188px;
+        font-size: 13px;
+    }
+    
+    
+    button{
+        margin: -46px 0 0 198px;
+        width: 139px;
+        height: 46px;
+        font-size: 24px;  
+     }
+     
+   
+    /*************** end of form and button **************/
+    
+    .all-details{
+        bottom: 334px;
+        font-size: 27px;
+    }  
+    .all-details:hover:after{
+        width: 193px;
+    }
+    .icons111{
+        width: 68px;
+    }
+    .down-icon{
+        gap:0px;
+    }
+    /*************************** END OF HEADER ******************/
+    
+    
+.container2{
+    height: 4355px;
+
+}
+
+h4{
+    color: #08A0D8;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+p{
+    color: #000;
+    text-align: center;
+    font-family: Red Hat Display;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 489px;
+    position: relative;
+    bottom: 62px;
+}
+.text1{
+    width: 332px;
+    bottom: 65px;
+    font-size: 24px;
+}
+.text2{
+    width: 263px;
+    bottom: 65px;
+    font-size: 24px;
+}
+.image{
+    width: 400px;
+    height: auto;
+}
+
+.our-mission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.square1{
+    Height:auto;
+    width: 400px;
+}
+.our-vision{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.square2{
+    Height:auto;
+    width: 400px;
+}
+
+/**container 2**/
+
+.image300{
+    height:auto;
+    width: 400px;
+}
+
+h6{
+    color: #000;
+    text-align: center;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 26px;
+}
+/************   1 pic, button and text (Finchglow)  **********/
+.square3{
+    width: 400px;
+    height: 540px;
+    
+
+
+}
+.Finchglow{
+    font-size: 15px;
+    width: 328px;
+
+}
+.btn{
+    width:208px;
+    height: 38px;
+    margin: 18px 0 0 -120px;
+    font-size: 24px;
+    bottom: 54px;
+ }
+ 
+ .social{
+    bottom: 11px;
+    right: 62px;
+    gap: 31px;
+ }
+ /************   2 pic, button and text (Travelden)  **********/
+.square4{
+    width: 400px;
+    height: 540px;
+}
+.Travelden{
+    font-size: 15px;
+    width: 328px;
+
+}
+.btc{
+    width:208px;
+    height: 38px;
+    margin: 22px 0 0 -120px;
+    font-size: 24px;
+    bottom: 64px;
+ }
+    
+ .social1{
+    bottom: 30px;
+    right: 62px;
+    gap: 31px;
+ }
+/************   3 pic, button and text (FCM)  **********/
+.square5{
+    width: 400px;
+    height: 540px;
+
+}
+.FCM{
+    font-size: 15px;
+    width: 328px;
+}
+.mdn{
+    width:208px;
+    height: 38px;
+    margin: -42px 0 0 -120px;
+    font-size: 24px;
+    bottom: 6px;
+ }
+ 
+.social2{
+    top: 20px;
+    right: 62px;
+    gap: 31px;
+ }
+/************   4 pic, button and text  (lagos) **********/
+.square6{
+    width: 400px;
+    height: 540px;
+}
+.lagos{
+    font-size: 15px;
+    width: 328px;
+}
+.cdn{
+    width:208px;
+    height: 38px;
+    margin: -16px 0 0 -120px;
+    font-size: 24px;
+    bottom: 38px;
+ }
+ 
+ .social3{
+    bottom: 13px;
+    right: 62px;
+    gap: 31px;
+ }
+/************   5 pic, button and text (finchgllow)  **********/
+
+.square7{
+    width: 400px;
+    height: 540px;
+}
+.finchgllow{
+    font-size: 15px;
+    width: 328px;
+}
+.icm{
+    width:208px;
+    height: 38px;
+    margin: -74px 0 0 -120px;
+    font-size: 24px;
+    top: 18px;
+ }
+ 
+ .social4{
+    top: 43px;
+    right: 62px;
+    gap: 31px;
+ }
+/************   !!!end!!!  **********/
+
+.mission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/****************** footer *****************/
+
+
+.first-content{
+    height: 898px;
+    
+}
+h2{
+    font-size:50px;
+}
+
+.imgs{
+    
+    gap: 5px;
+    width: 20%;
+}
+.cirle{
+    height: 100px;
+    width: 100px;
+}
+.cirle-container1{
+    gap: 47%;
+    height: auto;
+}
+.cirle-container2{ 
+    gap: 46px;
+    width: 99%;
+}
+.cirle-container3{
+    gap: 47%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}    
+.picture{
+    
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+}
+.subtext{
+    width: 113px;
+    font-size: 10px;
+    font-weight: 700;
+}
+.subtext1{
+    width: 113px;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+.subtext3{
+    width: 113px;
+    font-size: 10px;
+    font-weight: 700;
+}
+.subtext2{
+    width: 113px;
+    font-size: 10px;
+    font-weight: 700;
+}
+.subtext4{
+    width: 113px;
+    font-size: 10px;
+    font-weight: 700;
+}
+.subtext5{
+    width: 113px;
+    font-size: 10px;
+    font-weight: 700;
+}
+.subtext7{
+    width: 113px;
+    font-size: 10px;
+    font-weight: 700;
+}
+.subtext6{
+    width: 99px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+.txts-ourTeam{
+    font-size: 20px;
+    width: 339px;
+    font-weight: 700;
+    
+
+}
+
+/**********  ***************/
+
+
+
+
+.Second-content{
+    background-color: #08A0D8;
+    width: 400px;
+    position: relative;
+    left: -14px;
+ }
+
+
+.ellipse-1{
+align-items: center;
+display: flex;
+flex-direction: column;
+gap: 5px;
+width: 20%;
+}
+.cirle-11{
+    background: #FFF;
+    border-radius: 429px;
+    width: 135px;
+    height: 135px;
+    flex-shrink: 0;
+}
+.cirle-container4{
+    display: flex;
+    gap: 19%;
+    flex-direction: column;
+    margin: 1% 0% 5% 0%;
+    flex-wrap: nowrap;
+    align-content: space-around;
+}
+.title-name {
+    font-size: 21px;
+}
+.text-test{
+    font-size: 36px;
+}
+strong{
+    font-size: 15px;
+}
+.subtext8{
+    width: 252px;
+    font-size: 15px;
+}
+   
+.title-name{
+    font-size:21px
+}
+.down-icon22{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+.icons1{
+    width: 92px;
+    height: auto;
+}
+/***** THIRD CONTENT *******/
+
+.third-content{
+    position: relative;
+    right: 14px;
+    width: 400px;
+    height: 194px;
+
+}
+
+
+
+/*********backgroud button************/
+
+.Join{
+    right: 22px;
+    top: -123px;
+    width: 57%;
+}
+
+
+.Join-our{
+    font-size: 15px;
+    width: 226px;
+    margin: 176px 0 0 46px;
+
+}
+.apply-here{
+    width: 125px;
+    height: 38px;
+    font-size: 15px;
+    top: 27px;
+}
+.img-wing{
+    width: 232px;
+    height: auto;
+    position: relative;
+    bottom: -16px;
+    left: 154px;
+}
+
+.img-background{
+    width: 400px;
+    height: 215px;
+    position: relative;
+    bottom: 276px;
+}
+.move-img{
+    bottom: 487px;
+    width: 64%;
+    left: 0px;
+}
+
+
+/*********************************** Footer ******************************/
+
+.fouth-content{
+    position: relative;
+    right: 15px;
+    width: 400px;
+    height: 283px;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+}
+
+
+
+
+
+/****** form and button ****/
+.form-example333{
+    position: relative;
+    top: -20px;
+    left: -82px;
+}
+.fouth-content-txt {
+    position: relative;
+    left: 125px;
+    top: 0px;
+    width: 154px;
+}
+
+.form-example122{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    left: 54px;
+
+}
+.mail-box{
+    width: 193px;
+    height: 34px;
+}
+
+label{
+    font-size: 17px;
+    position: relative;
+    bottom: 10px;
+}
+.btn-down-button{
+
+    margin: -34px 0 0px 189px;
+    width: 104px;
+    height: 34px;
+    font-size: 15px;
+
+}
+
+/*************** end of form and button **************/
+
+
+/******** navigation button ***********/
+.subtxt-1{
+    gap: 8px;
+    position: relative;
+    top: -24px;
+    left: -81px;
+    align-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navigation-text1{
+    font-size: 17px;
+}
+.navigation-text2{
+    font-size: 17px;
+}
+.navigation-text3{
+    font-size: 17px;
+}
+.navigation-text1:hover:after{
+    width: 118px;
+}
+.navigation-text2:hover:after{
+    width: 60px;
+}
+.navigation-text3:hover:after{
+    width: 70px;
+}
+
+.bottom-txt{
+    font-size: 14px;
+    top: 0px;
+    left: -96px;
+}
+
+
 }

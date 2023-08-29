@@ -38,35 +38,6 @@ window.onscroll = () => {
 }
 
 
-//// for Menupopup  ////////
-let menuPopup = document.getElementById("popup");
-function  openHam() {
-    popup.classList.add("open-Ham");
-}
-function closePopup(){
-    popup.classList.remove("open-Ham");
-}
-//// for Menupopup button1  ////////
-
-
-let openHamburger = document.getElementById("Hamburger");
-function  hamburger() {
-    Hamburger.classList.add("ham-burger");
-}
-function closeham(){
-    Hamburger.classList.remove("ham-burger");
-}
-
-//// for Menupopup button2  ////////
-
-let closeHamburger = document.getElementById("Hamburger1");
-function  hamburger1() {
-    Hamburger1.classList.add("ham-burger1");
-}
-function closeham1(){
-    Hamburger1.classList.remove("ham-burger1");
-}
-//// for Menupopup end  ////////
 
 var emailfield = document.getElementById("email-field");
 var emailerror = document.getElementById("email-error");
@@ -88,30 +59,3 @@ function validateEmail() {
     return true;
   }
 }
-var emailfield1 = document.getElementById("email-field1");
-var emailerror1 = document.getElementById("email-error1");
-
-function validateEmail2() {
-    if(!emailfield1.value.match(/^[A-Za-z\._\-0-9]+[@][A-Za-z]+[+*\.][a-z]{3,4}$/)) {
-      emailerror1.innerHTML ="Valid email required";
-      emailfield1.style.borderColor ="red";
-      emailfield1.style.backgroundColor =" rgb(248, 200, 200)";
-      return false;
-    }
-  
-    else {
-      emailerror1.innerHTML ="";
-      emailfield1.style.borderColor ="green";
-      emailfield1.style.backgroundColor ="";
-      return true;
-    }
-  }
-
-function emailbutton() {
-  if (validateEmail() === true) {
-    closepage(), openPopup();
-  }
-}
-//// for Menupopup end  ////////
-
-

@@ -1,0 +1,193 @@
+body{
+    background-color: #ECECEC;
+    color: #000;
+    font-family: 'Fraunces', serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+}
+ 
+ /************************** for thank you Popup ***********************************/
+
+/** header{
+    transform: translate(0%,-50%) scale(0.1);
+    transition: transform 0.4s, top 0.4s;
+}
+
+/*for javascript open and close button code linked*/
+.open-popup{
+    visibility: visible;
+    transform: translate(0%,-50%) scale(0.1);
+}
+/*for javascript open and close button code linked*/
+
+.image{
+    margin: 43px 0 0 7px;
+   
+}
+p{
+    width: 553px;
+    color: #000;
+    font-family: Red Hat Display;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170.3%; /* 35.763px */
+}
+
+
+
+
+h3{
+  width: 55%;
+  font-size: 40px;
+  margin: 35px 0 0 -1px;
+  
+}
+
+.b-txt{
+    margin: -6px 0 0 27px;
+}
+
+/*******header*************/
+
+header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+h1{
+    color: #FFF;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 170.3%;
+    font-size: 26px;
+}
+h4{
+    color: #000;
+    text-align: center;
+    font-family: Red Hat Display;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.body_holder{
+    display: flex;
+    background-color: #fff;
+    width: 783px;
+    height: 964px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 376px;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+}
+.Unlimited{
+    position: relative;
+    right: -181px;
+    width: 388px;
+    top: 364px;
+    z-index: 2;
+}
+
+.Vector11{
+    position: relative;
+    right: -346px;
+    top: 27px;
+    width: 30px;
+    height: 30px;
+}
+
+.img-background{
+    position: relative;
+    z-index: 2;
+}
+.move-img{
+    position: relative;
+    top: 147px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.img-wing{
+    position: relative;
+    top: -335px;
+}
+.img{
+    position: relative;
+    top: 16px;
+}
+
+.bliss{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 225px;
+}
+
+.monthly{
+    display: flex;
+    gap: 30px;
+    position: relative;
+    top: -48px;
+}
+
+
+
+
+.annual{
+    background: #337FED;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    width: 290.224px;
+    height: 57px;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 700;
+    border: solid #337FED 1px;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    top: 46px;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    -moz-border-radius: 7px;
+    border-radius: 20px;
+ }
+ 
+ .annual:hover {
+    border: solid #337FED 1px;
+    background: #FFF;
+    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -moz-linear-gradient(top, #1E62D0, #FFF);
+    background-image: -ms-linear-gradient(top, #FFF, #3D94F6);
+    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -webkit-gradient(to bottom, #1E62D0, #FFF);
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    text-decoration: none;
+ }
