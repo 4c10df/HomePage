@@ -417,7 +417,7 @@ input{
     width: 478px;
     height: 62px;
     flex-shrink: 0; 
-    border-color: ;
+    
 }
 #email-error{
     color: red;
@@ -1251,14 +1251,14 @@ strong{
 }
 input,
 input::-webkit-input-placeholder {
-    font-size: 25px;
+    font-size: 19px;
     line-height: 4;
 }
 .mail-box{
     width: 471px;
     height: 66px;
     flex-shrink: 0; 
-    border-color: ;
+    
 }
 
 label{
