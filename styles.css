@@ -1249,6 +1249,11 @@ strong{
     align-content: space-around;
     align-items: baseline;
 }
+input,
+input::-webkit-input-placeholder {
+    font-size: 25px;
+    line-height: 4;
+}
 .mail-box{
     width: 471px;
     height: 66px;
