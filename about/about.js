@@ -59,3 +59,24 @@ function validateEmail() {
     return true;
   }
 }
+
+//// gotMail popup  ////////
+function emailbutton() {
+  if (validateEmail() === true) {
+    closepage() , openMail();
+  }
+}
+
+
+let gotMail = document.getElementById("gotMail");
+function openMail(){
+  gotMail.classList.add("open-Mail");
+}
+function closeMail(){
+  gotMail.classList.remove("open-Mail");
+}
+//// for first page= to  ////////
+let page = document.getElementById("page");
+function closepage(){
+  page.classList.add("open-page");
+}

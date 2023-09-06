@@ -38,34 +38,8 @@ window.onscroll = () => {
 }
 
 
-//// for Menupopup  ////////
-let menuPopup = document.getElementById("popup");
-function  openHam() {
-    popup.classList.add("open-Ham");
-}
-function closePopup(){
-    popup.classList.remove("open-Ham");
-}
-//// for Menupopup button1  ////////
 
 
-let openHamburger = document.getElementById("Hamburger");
-function  hamburger() {
-    Hamburger.classList.add("ham-burger");
-}
-function closeham(){
-    Hamburger.classList.remove("ham-burger");
-}
-
-//// for Menupopup button2  ////////
-
-let closeHamburger = document.getElementById("Hamburger1");
-function  hamburger1() {
-    Hamburger1.classList.add("ham-burger1");
-}
-function closeham1(){
-    Hamburger1.classList.remove("ham-burger1");
-}
 //// for Menupopup end  ////////
 
 var emailfield = document.getElementById("email-field");
@@ -87,6 +61,8 @@ function validateEmail() {
     emailfield.style.backgroundColor ="";
     return true;
   }
+
+  
 }
 var emailfield1 = document.getElementById("email-field1");
 var emailerror1 = document.getElementById("email-error1");
@@ -107,11 +83,30 @@ function validateEmail2() {
     }
   }
 
+/// for Menupopup end  ////////
+
+
+//// gotMail popup  ////////
 function emailbutton() {
   if (validateEmail() === true) {
-    closepage(), openPopup();
+    closepage() , openMail();
   }
 }
-//// for Menupopup end  ////////
+function emailbutton2() {
+  if (validateEmail2() === true) {
+    closepage() , openMail();
+  }
+}
 
-
+let gotMail = document.getElementById("gotMail");
+function openMail(){
+  gotMail.classList.add("open-Mail");
+}
+function closeMail(){
+  gotMail.classList.remove("open-Mail");
+}
+//// for first page= to  ////////
+let page = document.getElementById("page");
+function closepage(){
+  page.classList.add("open-page");
+}

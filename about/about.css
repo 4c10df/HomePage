@@ -1,4 +1,5 @@
 body{
+    background-color: #cfc6c6;
     margin: auto;
     color: #000;
     font-family: 'Fraunces', serif;
@@ -79,18 +80,9 @@ strong{
     
 }
 /*** line : hover *********/
-a:after{
-    content: "";
-    position: absolute;
-    background-color: #337FED;
-    height: 5px;
-    width: 0;
-    left: 0;
-    bottom: -5;
-    transition: 0.3s;
-}
-a:hover:after{
-    width: 60px;
+
+a:hover{
+    font-size: 21px;
     
 }
 a{
@@ -100,15 +92,7 @@ a{
     font-size: 20px;
     letter-spacing: 0.5px;
 }
-.line2:hover:after{
-    width: 70px;
-}
-.line3:hover:after{
-    width: 136px;
-}
-.line4:hover:after{
-    width: 83px;
-}
+
 /*** line : hover *********/
 
 
@@ -239,6 +223,7 @@ nav .logo {
 
 .first-content{
     height: 1521px;
+    background-color: #fff;
 }
 
 .imgs{
@@ -605,6 +590,496 @@ label{
     line-height: normal;
     position: relative;
     top: 19px;
+}
+
+/******** gotMail ***********/
+
+
+
+.gotMail{
+    background: #FFF;
+    display: flex;
+    flex-shrink: 0;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 78%;
+    height: 508px;
+    z-index: 6;
+    visibility: hidden;
+    transform: translate(0%,1%) scale(0.1);
+    transition: transform 0.4s, top 0.4s;
+    border-radius: 20px;
+}
+/**** for gotMail popup ****/
+.open-Mail{
+    visibility: visible;
+    transform: translate(0%,1%) scale(1);
+    top: 11%;
+    left: 11%;
+}
+/**** for home page to close ****/
+.open-page{
+    visibility: hidden;
+    transition: transform 0.4s,;
+}
+
+
+.boxes {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.gotMail strong{
+    color: #357ABD;
+    text-align: center;
+    font-family: Red Hat Display;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.gotMail p{
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14.169px; 
+}
+
+.Home-page11 {
+    background: #337FED ;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    width: 135px;
+    height: 51px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    border: solid #337FED 1px;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    top: 46px;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ 
+ .Home-page:hover {
+    border: solid #337FED 1px;
+    background: #FFF;
+    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -moz-linear-gradient(top, #1E62D0, #FFF);
+    background-image: -ms-linear-gradient(top, #FFF, #3D94F6);
+    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -webkit-gradient(to bottom, #1E62D0, #FFF);
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+
+
+
+
+@media only screen and (max-width:900px) {
+   
+    .imgi{
+        width: 200px;
+        height: auto;
+
+    }
+    
+    .gotMail{
+        width: 79%;
+        height: 433px;
+
+    }
+    .boxes {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .gotMail strong{
+        font-size: 64px;
+        
+    }
+    
+    .gotMail p{
+        font-size: 20px;
+        line-height: 14.169px; 
+    }
+    
+}
+@media only screen and (max-width:800px) {
+  
+   
+    .imgi{
+        width: 200px;
+        height: auto;
+
+    }
+    .mail-box {
+        width: 193px;
+        height: 34px;
+        position: relative;
+        left: -89px;
+    }
+    .gotMail{
+        width: 79%;
+        height: 433px;
+        
+    }
+
+    .boxes{
+        display: flex;
+        align-items: center;
+    }
+    .gotMail strong{
+        font-size: 44px;
+    }
+    
+    .gotMail p{
+        font-size: 14px;
+        line-height: 14.169px; 
+    }
+    
+}
+@media only screen and (max-width:700px) {
+  
+    
+    .imgi{
+        width: 176px;
+        height: auto;
+
+    }
+    .mail-box {
+        width: 239px;
+        height: 34px;
+        position: relative;
+        left: -92px;
+    }
+    
+    .gotMail{
+        width: 562px;
+        height: 433px; 
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: -33px;
+    }
+    .gotMail strong{
+        font-size: 41px;
+    }
+    
+    .gotMail p{
+        font-size: 13px;
+        line-height: 16.169px;
+    }
+    
+}
+@media only screen and (max-width:620px) {
+
+    .imgi{
+        width: 141px;
+        height: auto;
+
+    }
+    
+    .gotMail{
+        width: 480px;
+        height: 433px;
+
+    }
+    .mail-box {
+        width: 239px;
+        height: 34px;
+        position: relative;
+        left: -92px;
+    }
+    
+    .boxes{
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: -56px;
+    }
+    .gotMail strong{
+        font-size: 35px;
+    }
+    
+    .gotMail p{
+        font-size: 13px;
+        line-height: 16.169px;
+    }
+    
+}
+@media only screen and (max-width:520px) {
+  
+    
+    .imgi{
+        width: 178px;
+        height: auto;
+        position: relative;
+        top: -37px;
+        left: 54px;
+
+    }
+    
+    .gotMail{
+        width: 468px;
+        height: 472px;
+        left: 27px;
+        top: 37px;
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .gotMail strong{
+        font-size: 38px;
+    }
+    
+    .gotMail p{
+        font-size: 12px;
+        line-height: 14.169px; 
+    }
+    
+}
+@media only screen and (max-width:500px) {
+  
+    .imgi{
+        width: 215px;
+        height: auto;
+
+    }
+    
+    .gotMail{
+        width: 456px;
+        height: 472px;
+        left: 27px;
+        top: 37px;
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .gotMail strong{
+        font-size: 38px;
+    }
+    
+    .gotMail p{
+        font-size: 12px;
+        line-height: 14.169px; 
+    }
+    
+}
+@media only screen and (max-width:420px) {
+  
+    .imgi{
+        width: 215px;
+        height: auto;
+
+    }
+    
+    .gotMail{
+        width: 434px;
+        height: 472px;
+        left: 39px;
+        top: 37px;
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .gotMail strong{
+        font-size: 38px;
+    }
+    
+    .gotMail p{
+        font-size: 12px;
+        line-height: 14.169px; 
+    }
+    
+}
+@media only screen and (max-width:414px) {
+  
+    .imgi{
+        width: 215px;
+        height: auto;
+
+    }
+    
+    .gotMail{
+        width: 364px;
+        height: 472px;
+        left: 27px;
+        top: 37px;
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .gotMail strong{
+        font-size: 38px;
+    }
+    
+    .gotMail p{
+        font-size: 12px;
+        line-height: 14.169px; 
+    }
+    
+}
+@media only screen and (max-width:400px) {
+  
+    .imgi{
+        width: 215px;
+        height: auto;
+
+    }
+    
+    .gotMail{
+        width: 346px;
+        height: 472px;
+        left: 35px;
+        top: 37px;
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .gotMail strong{
+        font-size: 38px;
+    }
+    
+    .gotMail p{
+        font-size: 12px;
+        line-height: 14.169px; 
+    }
+    
+}
+@media only screen and (max-width:320px) {
+  
+    .imgi{
+        width: 215px;
+        height: auto;
+
+    }
+    
+    .gotMail{
+        width: 360px;
+        height: 500px;
+        left: 27px;
+        top: 18px;
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .gotMail strong{
+        font-size: 32px;
+    }
+    
+    .gotMail p{
+        font-size: 10px;
+        width: 492px;
+        text-align: center;
+        line-height: 21.169px;
+    }
+    
+}
+@media only screen and (max-width:300px) {
+  
+    .imgi{
+        width: 215px;
+        height: auto;
+
+    }
+    .mail-box {
+        width: 193px;
+        height: 34px;
+        left: 38px;
+    }
+    
+    .gotMail{
+        width: 357px;
+        height: 500px;
+        left: 27px;
+        top: 18px;
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .gotMail strong{
+        font-size: 32px;
+    }
+    
+    .gotMail p{
+        font-size: 17px;
+        width: 219px;
+        text-align: center;
+        line-height: 21.169px; 
+    }
+    
+}
+@media only screen and (max-width:200px) {
+  
+    
+    .imgi{
+        width: 123px;
+        height: auto;
+
+    }
+    
+    .gotMail{
+        width: 380px;
+        height: 329px;
+        left: 17px;
+        top: 18px;
+    }
+    .mail-box {
+        width: 193px;
+        height: 34px;
+        left: 81px;
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .gotMail strong{
+        font-size: 21px;
+    }
+    
+    .gotMail p{
+        font-size: 12px;
+        width: 141px;
+        text-align: center;
+        line-height: 15.169px; 
+    }
+    
 }
 
 /*********************************** screen sizes ***************************/

@@ -1,0 +1,581 @@
+body{
+    background-color: rgb(66, 83, 83);
+    margin: auto;
+    color: #000;
+    font-family: 'Fraunces', serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.site-wrapper{
+    padding: 36px;
+ 
+}
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+
+
+.gotMail{
+    background: #FFF;
+    display: flex;
+    flex-shrink: 0;
+    padding: 0 29px 30px;
+    justify-content: center;
+    align-items: center;
+    width: 948px;
+    height: 554px;
+    visibility: hiddn;
+    transform: translate(2%,1%) scale(1);
+    transition: transform 0.4s, top 0.4s;
+    flex-direction: column;
+}
+
+.open-Mail{
+    visibility: visible;
+    transform: translate(2%,1%) scale(1);
+}
+
+
+.boxes {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+strong{
+    color: #357ABD;
+    text-align: center;
+    font-family: Red Hat Display;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+p{
+    color: #000;
+    font-family: Red Hat Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14.169px; 
+}
+
+.Home-page {
+    background: #337FED ;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    width: 135px;
+    height: 51px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    border: solid #337FED 1px;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    top: 46px;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ 
+ .Home-page:hover {
+    border: solid #337FED 1px;
+    background: #FFF;
+    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -moz-linear-gradient(top, #1E62D0, #FFF);
+    background-image: -ms-linear-gradient(top, #FFF, #3D94F6);
+    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -webkit-gradient(to bottom, #1E62D0, #FFF);
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+
+
+@media only screen and (max-width:900px) {
+    .site-wrapper{
+        padding: 78px;
+     
+    }
+  
+    
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .imgi{
+        width: 200px;
+        height: auto;
+
+    }
+    
+    .gotMail{
+        width: 562px;
+        height: 433px;
+        transform: translate(0%,1%) scale(0);
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+    }
+    strong{
+        font-size: 44px;
+    }
+    
+    p{
+        font-size: 14px;
+        line-height: 14.169px; 
+    }
+    
+}
+@media only screen and (max-width:800px) {
+  
+    .site-wrapper{
+        padding: 57px;
+     
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .imgi{
+        width: 200px;
+        height: auto;
+
+    }
+    
+    .gotMail{
+        width: 562px;
+        height: 433px;
+        transform: translate(0%,1%) scale(0);
+    }
+
+    .boxes{
+        display: flex;
+        align-items: center;
+    }
+    strong{
+        font-size: 44px;
+    }
+    
+    p{
+        font-size: 14px;
+        line-height: 14.169px; 
+    }
+    
+}
+@media only screen and (max-width:700px) {
+  
+    .site-wrapper{
+        padding: 57px;
+     
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .imgi{
+        width: 200px;
+        height: auto;
+
+    }
+    
+    .gotMail{
+        width: 562px;
+        height: 433px;
+        transform: translate(0%,1%) scale(0);
+        
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+    }
+    strong{
+        font-size: 44px;
+    }
+    
+    p{
+        font-size: 14px;
+        line-height: 14.169px; 
+    }
+    
+}
+@media only screen and (max-width:620px) {
+  
+    .site-wrapper{
+        padding: 57px;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .imgi{
+        width: 200px;
+        height: auto;
+
+    }
+    
+    .gotMail{
+        width: 509px;
+        height: 433px;
+        transform: translate(0%,1%) scale(0);
+       
+
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+    }
+    strong{
+        font-size: 44px;
+    }
+    
+    p{
+        font-size: 14px;
+        line-height: 14.169px; 
+    }
+    
+}
+@media only screen and (max-width:520px) {
+  
+    .site-wrapper{
+        width: 78%;
+        margin: 34px 89px;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .imgi{
+        width: 215px;
+        height: auto;
+
+    }
+    
+    .gotMail{
+        width: 404px;
+        height: 472px;
+        left: 27px;
+        top: 37px;
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    strong{
+        font-size: 38px;
+    }
+    
+    p{
+        font-size: 12px;
+        line-height: 14.169px; 
+    }
+    
+}
+@media only screen and (max-width:500px) {
+  
+    .site-wrapper{
+        width: 78%;
+        margin: 34px 89px;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .imgi{
+        width: 215px;
+        height: auto;
+
+    }
+    
+    .gotMail{
+        width: 386px;
+        height: 472px;
+        left: 27px;
+        top: 37px;
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    strong{
+        font-size: 38px;
+    }
+    
+    p{
+        font-size: 12px;
+        line-height: 14.169px; 
+    }
+    
+}
+@media only screen and (max-width:420px) {
+  
+    .site-wrapper{
+        width: 78%;
+        margin: 34px 89px;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .imgi{
+        width: 215px;
+        height: auto;
+
+    }
+    
+    .gotMail{
+        width: 285px;
+        height: 472px;
+        left: 39px;
+        top: 37px;
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    strong{
+        font-size: 38px;
+    }
+    
+    p{
+        font-size: 12px;
+        line-height: 14.169px; 
+    }
+    
+}
+@media only screen and (max-width:414px) {
+  
+    .site-wrapper{
+        width: 78%;
+        margin: 34px 89px;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .imgi{
+        width: 215px;
+        height: auto;
+
+    }
+    
+    .gotMail{
+        width: 296px;
+        height: 472px;
+        left: 27px;
+        top: 37px;
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    strong{
+        font-size: 38px;
+    }
+    
+    p{
+        font-size: 12px;
+        line-height: 14.169px; 
+    }
+    
+}
+@media only screen and (max-width:400px) {
+  
+    .site-wrapper{
+        width: 78%;
+        margin: 34px 89px;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .imgi{
+        width: 215px;
+        height: auto;
+
+    }
+    
+    .gotMail{
+        width: 285px;
+        height: 472px;
+        left: 27px;
+        top: 37px;
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    strong{
+        font-size: 38px;
+    }
+    
+    p{
+        font-size: 12px;
+        line-height: 14.169px; 
+    }
+    
+}
+@media only screen and (max-width:320px) {
+  
+    .site-wrapper{
+        width: 78%;
+        margin: 34px 89px;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .imgi{
+        width: 215px;
+        height: auto;
+
+    }
+    
+    .gotMail{
+        width: 206px;
+        height: 500px;
+        left: 27px;
+        top: 18px;
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    strong{
+        font-size: 32px;
+    }
+    
+    p{
+        font-size: 15px;
+        width: 219px;
+        text-align: center;
+        line-height: 21.169px; 
+    }
+    
+}
+@media only screen and (max-width:300px) {
+  
+    .site-wrapper{
+        width: 78%;
+        margin: 34px 89px;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .imgi{
+        width: 215px;
+        height: auto;
+
+    }
+    
+    .gotMail{
+        width: 186px;
+        height: 500px;
+        left: 27px;
+        top: 18px;
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    strong{
+        font-size: 32px;
+    }
+    
+    p{
+        font-size: 15px;
+        width: 219px;
+        text-align: center;
+        line-height: 21.169px; 
+    }
+    
+}
+@media only screen and (max-width:200px) {
+  
+    .site-wrapper{
+        width: 78%;
+        margin: 34px 89px;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .imgi{
+        width: 99px;
+        height: auto;
+
+    }
+    
+    .gotMail{
+        width: 106px;
+        height: 329px;
+        left: 17px;
+        top: 18px;
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    strong{
+        font-size: 21px;
+    }
+    
+    p{
+        font-size: 12px;
+        width: 141px;
+        text-align: center;
+        line-height: 19.169px; 
+    }
+    
+}
