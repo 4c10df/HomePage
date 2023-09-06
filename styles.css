@@ -2404,7 +2404,7 @@ width: 57%;
 .Join-our{
 font-size: 20px;
 width: 366px;
-margin: 176px 0 0 46px;
+margin: 176px 0 0 106px;
 
 }
 .apply-here{
@@ -2430,7 +2430,7 @@ top: 27px;
 .form-example333{
 position: relative;
 top: -20px;
-left: -82px;
+left: -60px;
 }
 
 .form-example122{
@@ -2439,12 +2439,14 @@ left: -82px;
 .mail-box{
 width: 239px;
 height: 34px;
+left: 10px;
 }
 
 label{
 font-size: 17px;
 position: relative;
 bottom: 10px;
+left: 9px;
 }
 .btn-down-button{
 
@@ -2475,20 +2477,12 @@ font-size: 17px;
 .navigation-text3{
 font-size: 17px;
 }
-.navigation-text1:hover:after{
-width: 118px;
-}
-.navigation-text2:hover:after{
-width: 60px;
-}
-.navigation-text3:hover:after{
-width: 70px;
-}
+
 
 .bottom-txt{
 font-size: 14px;
 top: -71px;
-left: -82px;
+left: -49px;
 }
 
 .img-wing{
@@ -2496,7 +2490,7 @@ width: 380px;
 height: auto;
 position: relative;
 bottom: 3px;
-left: 183px;
+left:227px;
 }
 .img-background{
 width: 100%;

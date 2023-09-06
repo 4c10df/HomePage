@@ -8,34 +8,15 @@ const openMenu = document.querySelector(".openMenu");
 openMenu.addEventListener('click',show);
 closeMenu.addEventListener('click',close);
 
+
+function close(){
+  mainMenu.style.top = '-99%';
+}
 function show(){
     mainMenu.style.display = 'flex';
     mainMenu.style.top = '0';
 }
-function close(){
-    mainMenu.style.top = '-100%';
-}
 
-
-//let sections = document.querySelectorAll('section');
-//let navlink = document.querySelectorAll('nav a');
-
-window.onscroll = () => {
-    sections.forEach(sec =>{
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-
-        if(top >= offset && top < offset + height) {
-            navlink.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('nav a [herf*=' + id + ']').classList.add('active');
-            }); 
-
-        };
-    });
-}
 
 
 
@@ -92,11 +73,7 @@ function emailbutton() {
     closepage() , openMail();
   }
 }
-function emailbutton2() {
-  if (validateEmail2() === true) {
-    closepage() , openMail();
-  }
-}
+
 
 let gotMail = document.getElementById("gotMail");
 function openMail(){
@@ -109,4 +86,9 @@ function closeMail(){
 let page = document.getElementById("page");
 function closepage(){
   page.classList.add("open-page");
+}
+function emailbutton2() {
+  if (validateEmail2() === true) {
+    closepage() , openMail();
+  }
 }
